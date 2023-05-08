@@ -1,46 +1,62 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  import Nested from "./components/Nested.svelte";
+  import DirectHtml from "./components/DirectHtml.svelte";
+  import Interactivity from "./components/Interactivity.svelte";
+  import ReactiveDeclarations from "./components/ReactiveDeclarations.svelte";
+    import Arrays from "./components/Arrays.svelte";
+    import PropsProv from "./components/props/PropsProv.svelte";
+    import PackageInfoProv from "./components/props/PackageInfoProv.svelte";
+    import Conditionals from "./components/Conditionals.svelte";
+    import EachBlocks from "./components/EachBlocks.svelte";
 </script>
 
-<main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-</main>
-
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
+  .box{
+    border: 1px black solid;
+    margin: 2rem;
   }
 </style>
+
+<div class="box">
+  <p>This is from <code>Nested.svelte</code></p>
+  <Nested/>
+</div>
+
+<div class="box">
+  <p>This is from <code>App.svelte</code></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam laudantium unde accusamus praesentium repellat, voluptate iusto fugit reiciendis ipsam autem doloribus enim quam et odio. Eligendi, facere asperiores. Corporis officiis, natus recusandae animi dolorum, porro nulla deleniti, consequuntur voluptatem impedit temporibus labore enim excepturi sit eveniet nisi tempora hic. Cumque nesciunt corporis laboriosam, odio voluptas deserunt sed expedita nobis?</p>
+</div>
+
+<div class="box">
+  <DirectHtml/>
+</div>
+
+<div class="box">
+  <Interactivity/>
+</div>
+
+<div class="box">
+  <ReactiveDeclarations/>
+</div>
+
+<div class="box">
+  <Arrays/>
+</div>
+
+<div class="box">
+  <PropsProv/>
+</div>
+
+<div class="box">
+  <PackageInfoProv/>
+</div>
+
+<div class="box">
+  <Conditionals/>
+</div>
+
+<div class="box">
+  <EachBlocks/>
+</div>
+
+
