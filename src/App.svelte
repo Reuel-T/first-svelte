@@ -8,6 +8,8 @@
     import PackageInfoProv from "./components/props/PackageInfoProv.svelte";
     import Conditionals from "./components/Conditionals.svelte";
     import EachBlocks from "./components/EachBlocks.svelte";
+    import KeyEach from "./components/eachkeys/KeyEach.svelte";
+    import Await from "./components/Await.svelte";
 </script>
 
 <style>
@@ -57,6 +59,14 @@
 
 <div class="box">
   <EachBlocks/>
+</div>
+
+<div class="box">
+  <KeyEach/>
+</div>
+
+<div class="box">
+  <Await/>
 </div>
 
 
